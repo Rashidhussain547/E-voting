@@ -1,13 +1,18 @@
 import './App.css';
+import React from 'react';
 //import Login from './Pages/Login/Login';
-import Candidate from './Pages/ECscreen/Candidate';
+//import Candidate from './Pages/ECscreen/Candidate';
+//import Adminlogin from './Pages/AdminLogin/Adminlogin';
+import VoteScreen from './Pages/Votescreen/Votescreen'
 
 function App() {
   return (
    
    //<Login />  
-   <Candidate/>
-   
+   //<Candidate/>
+   //<Adminlogin/>
+   <VoteScreen/>
+  
   );
 }
 
