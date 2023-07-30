@@ -5,20 +5,7 @@ import CandidateForm from '../../Components/CandidateForm'; // Import the Candid
 
 const Candidate = () => {
   const [candidates, setCandidates] = useState([
-    {
-      id: 1,
-      name: 'Imran Khan',
-      party: 'Pakistan Tehreek-e-Insaf',
-      partyIcon: 'images/ptibat.png',
-      image: 'images/pti.webp',
-    },
-    {
-      id: 2,
-      name: 'Jane Smith',
-      party: 'Republican Party',
-      partyIcon: 'images/pmlntig.png',
-      image: 'images/pmln.jpg',
-    },
+    
   ]);
 
   const handleAddCandidate = (newCandidate) => {
@@ -81,6 +68,11 @@ const Candidate = () => {
               </div>
             </div>
           ))}
+          <div className="candidate-form">
+            <h2>Add New Candidate</h2>
+            <CandidateForm onAddCandidate={handleAddCandidate} />
+          </div>
+
           <div className="candidate-form">
             <h2>Add New Candidate</h2>
             <CandidateForm onAddCandidate={handleAddCandidate} />

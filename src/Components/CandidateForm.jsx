@@ -44,7 +44,6 @@ const CandidateForm = ({ onAddCandidate }) => {
         </label>
         {previewImage && <img src={previewImage} alt="Preview" className="preview-image" />}
       </div>
-      <button type="submit">Add Candidate</button>
     </form>
   );
 };

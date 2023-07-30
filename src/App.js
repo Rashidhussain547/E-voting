@@ -3,7 +3,8 @@ import React from 'react';
 //import Login from './Pages/Login/Login';
 //import Candidate from './Pages/ECscreen/Candidate';
 //import Adminlogin from './Pages/AdminLogin/Adminlogin';
-import VoteScreen from './Pages/Votescreen/Votescreen'
+//import VoteScreen from './Pages/Votescreen/Votescreen'
+import AddElectionForm from './Pages/AddElection/Addelection';
 
 function App() {
   return (
@@ -11,8 +12,8 @@ function App() {
    //<Login />  
    //<Candidate/>
    //<Adminlogin/>
-   <VoteScreen/>
-  
+   //<VoteScreen/>
+   <AddElectionForm/>
   );
 }
 
