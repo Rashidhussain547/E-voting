@@ -4,7 +4,8 @@ import React from 'react';
 //import Candidate from './Pages/ECscreen/Candidate';
 //import Adminlogin from './Pages/AdminLogin/Adminlogin';
 //import VoteScreen from './Pages/Votescreen/Votescreen'
-import AddElectionForm from './Pages/AddElection/Addelection';
+//import AddElectionForm from './Pages/AddElection/Addelection';
+import PollTable from './Pages/Poll/Poll';
 
 function App() {
   return (
@@ -13,7 +14,8 @@ function App() {
    //<Candidate/>
    //<Adminlogin/>
    //<VoteScreen/>
-   <AddElectionForm/>
+   //<AddElectionForm/>
+   <PollTable/>
   );
 }
 
