@@ -1,9 +1,13 @@
 // VoteScreen.jsx
 import React, { useState } from 'react';
+import {  Navigate } from 'react-router-dom';
 import './Votescreen.css';
 import Navbar from '../../Components/Navbar';
 
 const VoteScreen = () => {
+  
+  const NIC = localStorage.getItem("nicnumber")
+  
   const [candidates, setCandidates] = useState([
     {
       id: 1,
@@ -15,8 +19,8 @@ const VoteScreen = () => {
     },
     {
       id: 2,
-      name: 'Jane Smith',
-      party: 'Republican Party',
+      name: 'Shebaz sharif',
+      party: 'PML N',
       partyIcon: 'images/pmlntig.png',
       image: 'images/pmln.jpg',
       votes: 0,
@@ -33,7 +37,10 @@ const VoteScreen = () => {
 
   return (
     <div className="App">
-      <Navbar />
+      {!NIC && (
+          <Navigate to="/" replace={true} />
+        )}
+      
       <div className="candidates-row">
         <div className="candidates-grid">
           {candidates.map((candidate) => (

@@ -1,30 +1,50 @@
 import React from 'react';
 import './Login.css';
-import Navbar from '../../Components/Navbar';
+import { useNavigate } from 'react-router-dom';
 
-const Login = () => {
+const Login = ({ onLogin }) => {
+  const [val, setNicNumber] = React.useState('');
+  const [getNic, setNicLocal] = React.useState();
+  const navigate = useNavigate();
+
   const submitForm = (e) => {
     e.preventDefault();
     const nicNumber = e.target.elements.nicNumber.value;
 
-    // Perform validation and login logic here (not implemented in this example).
-    // You can use AJAX or other methods to send the NIC number to the server for validation.
+   
 
     console.log(`Submitted NIC Number: ${nicNumber}`);
+
+    
+    onLogin();
   };
+
+  const requestToVote = (e, vals) => {
+    console.log('val', vals);
+    localStorage.setItem('nicnumber', vals);
+    let nic = localStorage.getItem('nicnumber');
+    setNicLocal(nic);
+  };
+
+  React.useEffect(() => {
+    getNic !== undefined && navigate('/VoteScreen');
+  }, [getNic]);
 
   return (
     <div className="Login">
-      <Navbar />
       <div className="login-container">
         <form className="login-form" onSubmit={submitForm}>
           <input
             type="text"
             id="nicNumber"
             placeholder="Enter NIC number"
+            value={val}
+            onChange={(e) => setNicNumber(e.target.value)}
             required
           />
-          <button type="submit">Login</button>
+          <button type="submit" onClick={(e) => requestToVote(e, val)}>
+            Login
+          </button>
         </form>
       </div>
     </div>
@@ -32,3 +52,4 @@ const Login = () => {
 };
 
 export default Login;
+

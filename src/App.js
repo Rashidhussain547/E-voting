@@ -1,22 +1,26 @@
 import './App.css';
 import React from 'react';
+//import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 //import Login from './Pages/Login/Login';
 //import Candidate from './Pages/ECscreen/Candidate';
 //import Adminlogin from './Pages/AdminLogin/Adminlogin';
 //import VoteScreen from './Pages/Votescreen/Votescreen'
 //import AddElectionForm from './Pages/AddElection/Addelection';
-import PollTable from './Pages/Poll/Poll';
+//import PollTable from './Pages/Poll/Poll';
+import AppRouter from "./router"
 
 function App() {
   return (
    
-   //<Login />  
-   //<Candidate/>
+
+//<Login />  
+//<Candidate/>
    //<Adminlogin/>
-   //<VoteScreen/>
+   <AppRouter/>
    //<AddElectionForm/>
-   <PollTable/>
+   //<PollTable/>
   );
 }
 
 export default App;
+
