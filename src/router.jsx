@@ -15,6 +15,8 @@ const AppRouter = () => {
     setIsLoggedIn(false);
   };
 
+  
+
   let nic = localStorage.getItem('nicnumber');
 
   return (
