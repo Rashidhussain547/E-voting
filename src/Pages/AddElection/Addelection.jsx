@@ -27,7 +27,6 @@ const AddElectionForm = ({ onSaveElection }) => {
 
   return (
 <div>
-    <Navbar/>
     <div className="add-election-form">
       <img src={img1} alt="" />
       <form onSubmit={handleSubmit}>

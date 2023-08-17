@@ -35,7 +35,6 @@ const Candidate = () => {
 
   return (
     <div className="App">
-      <Navbar />
       <div className="candidates-row">
         <div className="candidates-grid">
           {candidates.map((candidate) => (

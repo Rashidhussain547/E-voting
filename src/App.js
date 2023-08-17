@@ -7,20 +7,22 @@ import React from 'react';
 //import VoteScreen from './Pages/Votescreen/Votescreen'
 //import AddElectionForm from './Pages/AddElection/Addelection';
 //import PollTable from './Pages/Poll/Poll';
+//import Navbar from './Components/Navbar';
 import AppRouter from "./router"
 
 function App() {
   return (
-   
+   <>
+<AppRouter/>
 
-//<Login />  
-//<Candidate/>
-   //<Adminlogin/>
-   <AppRouter/>
-   //<AddElectionForm/>
-   //<PollTable/>
+   </>
   );
 }
 
 export default App;
 
+//<Candidate/>
+   //<Adminlogin/>
+   //
+   //<AddElectionForm/>
+   //<PollTable/>

@@ -7,7 +7,6 @@ const Adminlogin = () => {
 
   return (
     <div className="Login">
-      <Navbar />
       <div className="login-container">
         <form className="login-form">
           <input

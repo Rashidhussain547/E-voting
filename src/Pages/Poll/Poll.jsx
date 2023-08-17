@@ -14,7 +14,6 @@ const PollTable = () => {
 
   return (
     <div>
-        <Navbar/>
         <div className="poll-table-container">
       <table className="poll-table">
         <thead>
