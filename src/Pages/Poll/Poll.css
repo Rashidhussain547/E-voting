@@ -30,6 +30,7 @@
   }
   
   .poll-table td button {
+    width: 100px;
     padding: 8px 16px;
     background-color: #bffa60;
     color: #fff;
