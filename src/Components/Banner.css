@@ -1,11 +1,41 @@
-/* Styles for Static Banner */
-.static-banner {
-    display: flex;
-    overflow: hidden; /* Hide overflowing images */
+.banner-container {
+    position: relative;
+    margin-top: 10px;
   }
   
-  .static-banner img {
+  .banner-image {
     width: 100%;
-    height: 70vh; /* Maintain image aspect ratio */
+    height: auto;
+  }
+  
+  .banner-text-container {
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    color: white;
+    text-align: left;
+  }
+  
+  .animated-text {
+    font-size: 36px;
+    font-weight: bold;
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+  }
+  
+  .sub-text {
+    font-size: 18px;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
   

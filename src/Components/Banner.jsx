@@ -1,13 +1,23 @@
 import React from 'react';
-import img1 from '../Assets/Images/banner.jpg'
-import './Banner.css'
+import './Banner.css';
+import bannerimg from '../Assets/Images/banner_2.jpg'
 
-const StaticBanner = () => {
+const Banner = () => {
   return (
-    <div className="static-banner">
-      <img src={img1}alt="Banner 1" />
+    <div className="banner-container">
+      <img
+        src={bannerimg}
+        alt="Banner"
+        className="banner-image"
+      />
+      <div className="banner-text-container">
+        <h1 className="animated-text">"Use your vote wisely!"</h1>
+        <p className="sub-text">
+          Make your decision-making process modern, secure, and effective.
+        </p>
+      </div>
     </div>
   );
 };
 
-export default StaticBanner;
+export default Banner;
