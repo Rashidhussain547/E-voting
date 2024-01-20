@@ -1,0 +1,11 @@
+/* Styles for Static Banner */
+.static-banner {
+    display: flex;
+    overflow: hidden; /* Hide overflowing images */
+  }
+  
+  .static-banner img {
+    width: 100%;
+    height: 70vh; /* Maintain image aspect ratio */
+  }
+  

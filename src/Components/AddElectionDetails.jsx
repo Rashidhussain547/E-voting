@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import './Addelection.css';
-import Navbar from '../../Components/Navbar';
-import img1 from '../../Assets/Images/img1.png'
+import './AddElectionDetails.css';
+
 
 const AddElectionForm = ({ onSaveElection }) => {
   const [electionName, setElectionName] = useState('');
@@ -28,7 +27,6 @@ const AddElectionForm = ({ onSaveElection }) => {
   return (
 <div>
     <div className="add-election-form">
-      <img src={img1} alt="" />
       <form onSubmit={handleSubmit}>
         <div className="form-group">
           <label>Election Name:</label>
@@ -38,26 +36,20 @@ const AddElectionForm = ({ onSaveElection }) => {
             onChange={(e) => setElectionName(e.target.value)}
             required
           />
-        </div>
-        <div className="form-group">
-          <label>Date:</label>
+          <label id='label-date'>Date:</label>
           <input
             type="date"
             value={date}
             onChange={(e) => setDate(e.target.value)}
             required
           />
-        </div>
-        <div className="form-group">
-          <label>Start Time:</label>
+          <label htmlFor=''>Start Time:</label>
           <input
             type="time"
             value={startTime}
             onChange={(e) => setStartTime(e.target.value)}
             required
           />
-        </div>
-        <div className="form-group">
           <label>End Time:</label>
           <input
             type="time"
@@ -66,7 +58,7 @@ const AddElectionForm = ({ onSaveElection }) => {
             required
           />
         </div>
-        <button type="submit">Save</button>
+        {/* <button type="submit">Save</button> */}
       </form>
     </div>
 </div>

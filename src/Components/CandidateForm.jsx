@@ -32,7 +32,8 @@ const CandidateForm = ({ onAddCandidate }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+  <div className='Candidate-form col-lg'>
+      <form onSubmit={handleSubmit}>
       <input type="text" name="id" placeholder="ID" required />
       <input type="text" name="name" placeholder="Candidate Name" required />
       <input type="text" name="party" placeholder="Party Name" required />
@@ -45,6 +46,7 @@ const CandidateForm = ({ onAddCandidate }) => {
         {previewImage && <img src={previewImage} alt="Preview" className="preview-image" />}
       </div>
     </form>
+  </div>
   );
 };
 
