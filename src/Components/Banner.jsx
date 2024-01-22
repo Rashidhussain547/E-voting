@@ -11,9 +11,9 @@ const Banner = () => {
         className="banner-image"
       />
       <div className="banner-text-container">
-        <h1 className="animated-text">"Use your vote wisely!"</h1>
+        <h1 className="animated-text">Make your decision-making process modern, secure, and effective.</h1>
         <p className="sub-text">
-          Make your decision-making process modern, secure, and effective.
+        Upgrade from manually counting ballots to an online election system without scarificing the integrity of your vote.
         </p>
       </div>
     </div>

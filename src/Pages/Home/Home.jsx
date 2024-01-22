@@ -1,16 +1,16 @@
 import React from 'react';
-// import Guidelines from './Guidelines';
-// import Footer from './Footer';
 import StaticBanner from '../../Components/Banner';
 import Navbar from '../../Components/Navbar';
+import Midcomp from '../../Components/Midcomp';
+import AboutUs from '../../Components/About';
 
 const Home = () => {
   return (
     <div>
       <Navbar/>  
       <StaticBanner />
-      {/* <Guidelines /> */}
-      {/* <Footer /> */}
+      <Midcomp/>
+      <AboutUs/>
     </div>
   );
 };

@@ -1,0 +1,146 @@
+.vision-mission {
+    width: 100%;
+    margin-top: 100px;
+}
+
+ .vision-mission .vm-content {
+    display: flex;
+    height: 60vh;
+    margin-right: 50px;
+}
+
+ .vision-mission .vm-content .vm-img {
+    flex: 2;
+    margin-left: 50px;
+}
+
+ .vision-mission .vm-content .vm-img img {
+    width: 100%;
+    height: 100%;
+}
+
+ .vision-mission .vm-content .vm-text {
+    flex: 2;
+    display: flex;
+    background: white;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+ .vision-mission .vm-content .vm-text h3 {
+    font-size: 32px;
+    color: black;
+    position: relative;
+    z-index: 1;
+    text-indent: 35px;
+    padding-top: 35px;
+}
+
+ .vision-mission .vm-content .vm-text .inner-text-vm {
+    font-size: 14px;
+    line-height: 22px;
+    font-family: var(--font-Quicksand-Medium);
+    padding-left: 35px;
+    padding-right: 35px;
+    height: 142px;
+    margin-bottom: 25px;
+    overflow-y: hidden;
+    text-overflow: ellipsis;
+}
+
+ .vision-mission .vm-content .vm-text .ourMission,
+ .vision-mission .vm-content .vm-text .ourVision {
+    flex: 2;
+    position: relative;
+    padding: 45px 0;
+}
+
+ .vision-mission .vm-content .vm-text .ourMission h2,
+ .vision-mission .vm-content .vm-text .ourVision h2 {
+    position: absolute;
+    left: 35px;
+    font-size: 65px;
+    top: 10px;
+    color: #bffa60;
+    opacity: 0.7;
+}
+
+ .vision-mission .vm-content .vm-text .ourMission button {
+    position: absolute;
+    bottom: 18px;
+    left: 35px;
+}
+
+ .vision-mission .vm-content .vm-text .ourVision {
+    position: relative;
+}
+
+ .vision-mission .vm-content .vm-text .ourVision h2 {
+    position: absolute;
+}
+
+ .vision-mission .vm-content .vm-text .ourVision::before {
+    width: 1px;
+    height: 100%;
+    background: #bffa60;
+    position: absolute;
+    content: "";
+    left: -7px;
+    top: 0px;
+}
+
+ .team-heading {
+    margin: 100px 0 50px 0;
+}
+
+ .ourClients {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+
+ .ourClients .logoSlider {
+    width: 150px !important;
+}
+
+ .ourClients .logoSlider img {
+    width: 100%;
+}
+
+ .serviceHome,
+ .home-about {
+    margin-top: 100px;
+}
+
+.abboutContent{
+    margin-top: 200px;
+    display: flex;
+    position: relative;
+    margin-top: 100px;
+}
+
+.abboutContent .aboutBg {
+    background: #bffa60;
+    padding: 135px 50px 135px 50px;
+    width: 75%;
+}
+
+.abboutContent .aboutBg .aboutusText {
+    padding-top: 20px;
+    width: 58%;
+    line-height: 28px;
+    font-size: 14px;
+    text-align: justify;
+}
+
+.abboutContent .about-img {
+    width: 570px;
+    position: absolute;
+    right: 0px;
+    top: 14%;
+}
+
+.abboutContent .about-img img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}

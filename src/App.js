@@ -14,7 +14,7 @@ import React from 'react';
 //import CandidateForm from './Components/CandidateForm';
 //import StaticBanner from './Components/Banner';
 //import ElectionResults from './Pages/Result/Result';
-//import ElectionNotice from './Pages/Notice/Notice';
+import ElectionNotice from './Pages/Notice/Notice';
 import Home from './Pages/Home/Home';
 
 function App() {
