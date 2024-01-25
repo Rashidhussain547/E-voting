@@ -1,10 +1,32 @@
 import React from "react";
 import img1 from "../Assets/Images/think.jpg";
 import "./Midcomp.css";
-
+import 'bootstrap/dist/css/bootstrap.min.css';
+import {useRef , useEffect} from "react";
 const Midcomp = () => {
+  const animatedRef = useRef();
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const element = animatedRef.current;
+      const rect = element.getBoundingClientRect();
+      const windowHeight = window.innerHeight;
+
+      if (rect.top < windowHeight * 0.75) {
+        element.classList.add('animate');
+      } else {
+        element.classList.remove('animate');
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <>
+    <div ref={animatedRef} className="animated-componentM">
       <div className="vision-mission" data-aos="fade-right">
         <div className="vm-content">
           <div className="vm-img">
@@ -32,7 +54,7 @@ const Midcomp = () => {
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
